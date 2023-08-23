@@ -2,6 +2,8 @@
 
 namespace C6Digital\FilamentPlausiblePage;
 
+use C6Digital\FilamentPlausiblePage\Commands\FilamentPlausiblePageCommand;
+use C6Digital\FilamentPlausiblePage\Testing\TestsFilamentPlausiblePage;
 use Filament\Support\Assets\AlpineComponent;
 use Filament\Support\Assets\Asset;
 use Filament\Support\Assets\Css;
@@ -13,8 +15,6 @@ use Livewire\Features\SupportTesting\Testable;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use C6Digital\FilamentPlausiblePage\Commands\FilamentPlausiblePageCommand;
-use C6Digital\FilamentPlausiblePage\Testing\TestsFilamentPlausiblePage;
 
 class FilamentPlausiblePageServiceProvider extends PackageServiceProvider
 {

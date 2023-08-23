@@ -33,10 +33,7 @@ class FilamentPlausiblePageServiceProvider extends PackageServiceProvider
             ->hasCommands($this->getCommands())
             ->hasInstallCommand(function (InstallCommand $command) {
                 $command
-                    ->publishConfigFile()
-                    ->publishMigrations()
-                    ->askToRunMigrations()
-                    ->askToStarRepoOnGitHub('c6digital/filament-plausible-page');
+                    ->publishConfigFile();
             });
 
         $configFileName = $package->shortName();
@@ -77,18 +74,6 @@ class FilamentPlausiblePageServiceProvider extends PackageServiceProvider
 
         // Icon Registration
         FilamentIcon::register($this->getIcons());
-
-        // Handle Stubs
-        if (app()->runningInConsole()) {
-            foreach (app(Filesystem::class)->files(__DIR__ . '/../stubs/') as $file) {
-                $this->publishes([
-                    $file->getRealPath() => base_path("stubs/filament-plausible-page/{$file->getFilename()}"),
-                ], 'filament-plausible-page-stubs');
-            }
-        }
-
-        // Testing
-        Testable::mixin(new TestsFilamentPlausiblePage());
     }
 
     protected function getAssetPackageName(): ?string
@@ -114,7 +99,7 @@ class FilamentPlausiblePageServiceProvider extends PackageServiceProvider
     protected function getCommands(): array
     {
         return [
-            FilamentPlausiblePageCommand::class,
+            //
         ];
     }
 

@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace C6Digital\FilamentPlausiblePage\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class FilamentPlausiblePageCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'filament-plausible-page';
 
     public $description = 'My command';
 

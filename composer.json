@@ -1,29 +1,27 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "c6digital/filament-plausible-page",
+    "description": "Embed your Plausible dashboard inside of Filament.",
     "keywords": [
-        ":vendor_name",
+        "c6digital",
         "laravel",
-        ":package_slug"
+        "filament-plausible-page"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/c6digital/filament-plausible-page",
     "support": {
-        "issues": "https://github.com/:vendor_slug/:package_slug/issues",
-        "source": "https://github.com/:vendor_slug/:package_slug"
+        "issues": "https://github.com/c6digital/filament-plausible-page/issues",
+        "source": "https://github.com/c6digital/filament-plausible-page"
     },
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Ryan Chandler",
+            "email": "ryan@c6digital.io",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.1",
         "filament/filament": "^3.0",
-        "filament/forms": "^3.0",
-        "filament/tables": "^3.0",
         "spatie/laravel-package-tools": "^1.15.0",
         "illuminate/contracts": "^10.0"
     },
@@ -42,13 +40,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "C6Digital\\FilamentPlausiblePage\\": "src/",
+            "C6Digital\\FilamentPlausiblePage\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/"
+            "C6Digital\\FilamentPlausiblePage\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -68,10 +66,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "C6Digital\\FilamentPlausiblePage\\FilamentPlausiblePageServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "FilamentPlausiblePage": "C6Digital\\FilamentPlausiblePage\\Facades\\FilamentPlausiblePage"
             }
         }
     },

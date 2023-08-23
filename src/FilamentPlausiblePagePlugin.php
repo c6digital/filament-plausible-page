@@ -1,15 +1,15 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace C6Digital\FilamentPlausiblePage;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
 
-class SkeletonPlugin implements Plugin
+class FilamentPlausiblePagePlugin implements Plugin
 {
     public function getId(): string
     {
-        return 'skeleton';
+        return 'filament-plausible-page';
     }
 
     public function register(Panel $panel): void

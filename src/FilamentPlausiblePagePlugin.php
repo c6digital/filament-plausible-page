@@ -21,7 +21,7 @@ class FilamentPlausiblePagePlugin implements Plugin
     {
         $panel
             ->pages([
-                Plausible::class
+                Plausible::class,
             ]);
     }
 

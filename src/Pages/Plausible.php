@@ -12,11 +12,11 @@ class Plausible extends Page
 
     protected static string $view = 'filament-plausible-page::pages.plausible';
 
-    public function getHeading(): string|Htmlable
+    public function getHeading(): string | Htmlable
     {
         $plugin = FilamentPlausiblePagePlugin::get();
 
-        if (!$plugin->showPageTitle) {
+        if (! $plugin->showPageTitle) {
             return '';
         }
 

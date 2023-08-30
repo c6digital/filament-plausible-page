@@ -12,6 +12,8 @@ class FilamentPlausiblePagePlugin implements Plugin
 
     public bool $showPageTitle = true;
 
+    public string $title = 'Plausible';
+
     public function getId(): string
     {
         return 'filament-plausible-page';
@@ -45,6 +47,13 @@ class FilamentPlausiblePagePlugin implements Plugin
     public function hidePageTitle(): static
     {
         $this->showPageTitle = false;
+
+        return $this;
+    }
+
+    public function title(string $title): static
+    {
+        $this->title = $title;
 
         return $this;
     }

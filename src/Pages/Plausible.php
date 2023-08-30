@@ -23,7 +23,7 @@ class Plausible extends Page
         return parent::getHeading();
     }
 
-    public function getTitle(): string|Htmlable
+    public function getTitle(): string | Htmlable
     {
         return FilamentPlausiblePagePlugin::get()->title;
     }

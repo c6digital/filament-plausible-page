@@ -2,6 +2,10 @@
 
 All notable changes to `filament-plausible-page` will be documented in this file.
 
+## v1.1.1 - 2023-08-30
+
+- Use custom page titles for navigation label.
+
 ## v1.1.0 - 2023-08-30
 
 - Support changing the page title.

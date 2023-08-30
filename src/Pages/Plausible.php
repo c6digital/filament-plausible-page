@@ -28,6 +28,11 @@ class Plausible extends Page
         return FilamentPlausiblePagePlugin::get()->title;
     }
 
+    public static function getNavigationLabel(): string
+    {
+        return FilamentPlausiblePagePlugin::get()->title;
+    }
+
     protected function getViewData(): array
     {
         return [

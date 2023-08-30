@@ -2,6 +2,10 @@
 
 All notable changes to `filament-plausible-page` will be documented in this file.
 
+## v1.1.0 - 2023-08-30
+
+- Support changing the page title.
+
 ## v1.0.0 - 2023-08-23
 
 - Initial release.

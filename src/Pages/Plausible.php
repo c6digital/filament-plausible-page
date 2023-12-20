@@ -33,6 +33,11 @@ class Plausible extends Page
         return FilamentPlausiblePagePlugin::get()->title;
     }
 
+    public static function getNavigationGroup(): ?string
+    {
+        return FilamentPlausiblePagePlugin::get()->navigationGroup;
+    }
+
     protected function getViewData(): array
     {
         return [

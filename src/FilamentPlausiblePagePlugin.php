@@ -14,6 +14,8 @@ class FilamentPlausiblePagePlugin implements Plugin
 
     public string $title = 'Plausible';
 
+    public ?string $navigationGroup = null;
+
     public function getId(): string
     {
         return 'filament-plausible-page';
@@ -54,6 +56,13 @@ class FilamentPlausiblePagePlugin implements Plugin
     public function title(string $title): static
     {
         $this->title = $title;
+
+        return $this;
+    }
+
+    public function navigationGroup(string $navigationGroup): static
+    {
+        $this->navigationGroup = $navigationGroup;
 
         return $this;
     }

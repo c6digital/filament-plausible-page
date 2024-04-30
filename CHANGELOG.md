@@ -2,6 +2,11 @@
 
 All notable changes to `filament-plausible-page` will be documented in this file.
 
+## v2.0.0 - 2024-04-30
+
+* Laravel 11.x support.
+* Drop Laravel 10.x support.
+
 ## v1.1.2 - 2023-12-20
 
 * Allow setting navigation group for page with `navigationGroup()` method.

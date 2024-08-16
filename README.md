@@ -61,6 +61,17 @@ return $panel
     );
 ```
 
+### Conditionally registering navigation items
+
+If you want to conditionally show the navigation items registered by the page, you can provide a callback function to the `shouldRegisterNavigationUsing()` method.
+
+```php
+FilamentPlausiblePagePlugin::make()
+    ->shouldRegisterNavigationUsing(function () {
+        return Tenant::hasPlausibleShareUrl();
+    });
+```
+
 ## Testing
 
 ```bash

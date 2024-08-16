@@ -3,6 +3,7 @@
 namespace C6Digital\FilamentPlausiblePage;
 
 use C6Digital\FilamentPlausiblePage\Pages\Plausible;
+use Closure;
 use Filament\Contracts\Plugin;
 use Filament\Panel;
 
@@ -15,6 +16,8 @@ class FilamentPlausiblePagePlugin implements Plugin
     public string $title = 'Plausible';
 
     public ?string $navigationGroup = null;
+
+    public Closure | bool $shouldRegisterNavigation = true;
 
     public function getId(): string
     {
@@ -65,6 +68,18 @@ class FilamentPlausiblePagePlugin implements Plugin
         $this->navigationGroup = $navigationGroup;
 
         return $this;
+    }
+
+    public function shouldRegisterNavigationUsing(Closure | bool $value = true): static
+    {
+        $this->shouldRegisterNavigation = $value;
+
+        return $this;
+    }
+
+    public function shouldRegisterNavigation(): bool
+    {
+        return value($this->shouldRegisterNavigation);
     }
 
     public static function get(): static

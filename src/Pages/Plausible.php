@@ -23,6 +23,11 @@ class Plausible extends Page
         return parent::getHeading();
     }
 
+    public static function shouldRegisterNavigation(): bool
+    {
+        return FilamentPlausiblePagePlugin::get()->shouldRegisterNavigation();
+    }
+
     public function getTitle(): string | Htmlable
     {
         return FilamentPlausiblePagePlugin::get()->title;

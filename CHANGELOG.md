@@ -2,6 +2,11 @@
 
 All notable changes to `filament-plausible-page` will be documented in this file.
 
+## v2.1.0 - 2024-08-16
+
+* Allow conditionally registering navigation items.
+* Allow dynamically retrieving share URL.
+
 ## v2.0.0 - 2024-04-30
 
 * Laravel 11.x support.

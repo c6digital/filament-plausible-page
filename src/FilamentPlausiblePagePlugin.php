@@ -84,6 +84,13 @@ class FilamentPlausiblePagePlugin implements Plugin
         return value($this->shouldRegisterNavigation);
     }
 
+    public function plausibleShareUrl(string | Closure | null $url): static
+    {
+        $this->plausibleShareUrl = $url;
+
+        return $this;
+    }
+
     public function getPlausibleShareUrl(): string
     {
         return value($this->plausibleShareUrl) ?? config('filament-plausible-page.url');

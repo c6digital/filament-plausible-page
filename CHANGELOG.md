@@ -2,6 +2,10 @@
 
 All notable changes to `filament-plausible-page` will be documented in this file.
 
+## v2.1.1 - 2024-08-16
+
+* Add missing `plausibleShareUrl()` method.
+
 ## v2.1.0 - 2024-08-16
 
 * Allow conditionally registering navigation items.

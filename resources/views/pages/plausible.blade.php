@@ -1,7 +1,7 @@
 <x-filament-panels::page>
     <div x-data="{
         theme: 'light',
-        _url: @js(config('filament-plausible-page.url')),
+        _url: @js($plugin->getPlausibleShareUrl()),
         init() {
             this.theme = localStorage.getItem('theme') || 'system'
 

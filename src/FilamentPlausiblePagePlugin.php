@@ -19,6 +19,8 @@ class FilamentPlausiblePagePlugin implements Plugin
 
     public Closure | bool $shouldRegisterNavigation = true;
 
+    public string | Closure | null $plausibleShareUrl = null;
+
     public function getId(): string
     {
         return 'filament-plausible-page';
@@ -80,6 +82,11 @@ class FilamentPlausiblePagePlugin implements Plugin
     public function shouldRegisterNavigation(): bool
     {
         return value($this->shouldRegisterNavigation);
+    }
+
+    public function getPlausibleShareUrl(): string
+    {
+        return value($this->plausibleShareUrl) ?? config('filament-plausible-page.url');
     }
 
     public static function get(): static

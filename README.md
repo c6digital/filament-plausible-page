@@ -2,7 +2,7 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/c6digital/filament-plausible-page.svg?style=flat-square)](https://packagist.org/packages/c6digital/filament-plausible-page)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/c6digital/filament-plausible-page/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/c6digital/filament-plausible-page/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/c6digital/filament-plausible-page/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/c6digital/filament-plausible-page/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/c6digital/filament-plausible-page/fix-php-code-styling.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/c6digital/filament-plausible-page/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/c6digital/filament-plausible-page.svg?style=flat-square)](https://packagist.org/packages/c6digital/filament-plausible-page)
 
 This package allows you to embed your Plausible Analytics dashboard as a page inside of Filament.

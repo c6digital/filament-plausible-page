@@ -2,6 +2,12 @@
 
 All notable changes to `filament-plausible-page` will be documented in this file.
 
+## v2.2.1 - 2025-09-27
+
+### What's Changed
+
+* Laravel 12 support
+
 ## v2.1.1 - 2024-08-16
 
 * Add missing `plausibleShareUrl()` method.

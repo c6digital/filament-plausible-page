@@ -2,6 +2,16 @@
 
 All notable changes to `filament-plausible-page` will be documented in this file.
 
+## v2.3.0 - 2026-09-03
+
+### What's Changed
+
+* Bump aglipanci/laravel-pint-action from 2.5 to 2.6 by @dependabot[bot] in https://github.com/c6digital/filament-plausible-page/pull/8
+* Bump dependabot/fetch-metadata from 1.6.0 to 2.5.0 by @dependabot[bot] in https://github.com/c6digital/filament-plausible-page/pull/11
+* Add Filament v4 and v5 support by @c6andy in https://github.com/c6digital/filament-plausible-page/pull/12
+
+**Full Changelog**: https://github.com/c6digital/filament-plausible-page/compare/v2.2.1...v2.3.0
+
 ## v2.2.1 - 2025-09-27
 
 ### What's Changed

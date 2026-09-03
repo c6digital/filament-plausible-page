@@ -12,14 +12,17 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
-        os: [ubuntu-latest, windows-latest]
-        laravel: [12.*, 11.*]
-        php: [8.3, 8.2]
+        os: [ubuntu-latest]
+        php: [8.4, 8.3, 8.2]
+        laravel: [13.*, 12.*, 11.*]
+        filament: [5.*, 4.*, 3.*]
         stability: [prefer-lowest, prefer-stable]
-        include:
-          - carbon: 3.*
+        exclude:
+          # orchestra/testbench ^11 (Laravel 13) requires PHP 8.3+.
+          - php: 8.2
+            laravel: 13.*
 
-    name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.stability }} - ${{ matrix.os }}
+    name: P${{ matrix.php }} - L${{ matrix.laravel }} - F${{ matrix.filament }} - ${{ matrix.stability }} - ${{ matrix.os }}
 
     steps:
       - name: Checkout code
@@ -39,7 +42,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          composer require "laravel/framework:${{ matrix.laravel }}" "nesbot/carbon:${{ matrix.carbon }}" --no-interaction --no-update
+          composer require "laravel/framework:${{ matrix.laravel }}" "filament/filament:${{ matrix.filament }}" "nesbot/carbon:3.*" --no-interaction --no-update
           composer update --${{ matrix.stability }} --prefer-dist --no-interaction
 
       - name: List Installed Dependencies

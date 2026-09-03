@@ -7,6 +7,16 @@
 
 This package allows you to embed your Plausible Analytics dashboard as a page inside of Filament.
 
+## Version compatibility
+
+| Package  | Filament      | Laravel          | PHP  |
+|----------|---------------|------------------|------|
+| `^2.3`   | 3.x, 4.x, 5.x | 11.x, 12.x, 13.x | 8.2+ |
+| `< 2.3`  | 3.x           | 11.x, 12.x       | 8.2+ |
+
+Filament 4 and 5 require Laravel 11.28+; on older Laravel 11 releases Composer will
+resolve Filament 3.
+
 ## Installation
 
 You can install the package via Composer:

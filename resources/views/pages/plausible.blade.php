@@ -3,7 +3,7 @@
         theme: 'light',
         _url: @js($plugin->getPlausibleShareUrl()),
         init() {
-            this.theme = localStorage.getItem('theme') || 'system'
+            this.theme = localStorage.getItem('theme') || @js(filament()->getDefaultThemeMode()->value)
 
             window.addEventListener('theme-changed', ($event) => {
                 this.theme = $event.detail;

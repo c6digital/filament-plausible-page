@@ -8,9 +8,15 @@ use Illuminate\Contracts\Support\Htmlable;
 
 class Plausible extends Page
 {
-    protected static ?string $navigationIcon = 'heroicon-o-chart-bar-square';
+    public function getView(): string
+    {
+        return 'filament-plausible-page::pages.plausible';
+    }
 
-    protected static string $view = 'filament-plausible-page::pages.plausible';
+    public static function getNavigationIcon(): string | Htmlable | null
+    {
+        return 'heroicon-o-chart-bar-square';
+    }
 
     public function getHeading(): string | Htmlable
     {
@@ -43,6 +49,9 @@ class Plausible extends Page
         return FilamentPlausiblePagePlugin::get()->navigationGroup;
     }
 
+    /**
+     * @return array<string, mixed>
+     */
     protected function getViewData(): array
     {
         return [
